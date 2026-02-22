@@ -6,8 +6,6 @@
  <img style="margin:auto" width="300" src="./logo/logo_2.png" />
 </p>
 
-<img width="100%" src="./git_home/gif.gif" />
-
 > **AlgoViz** — *See algorithms in motion.* An interactive visualizer for **data structures and algorithms** with step-by-step animations. Built for students and developers who want to learn DSA visually.
 
 ### [AlgoViz includes](https://anuragshukla19.github.io/AlgoViz/)
