@@ -1,7 +1,7 @@
 {
-  "name": "dsalgo-vis",
+  "name": "algoviz",
   "version": "1.0.0",
-  "description": "visualise data structure and algorithm",
+  "description": "Interactive visualizer for data structures & algorithms. See algorithms in motion.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jhabarsingh/DSALGO-Visualizer.git"
+    "url": "git+https://github.com/AnuragShukla19/AlgoViz.git"
   },
   "keywords": [
     "datastructure",
     "algorithm"
-  ],
-  "author": "jhabar singh bhati",
-  "license": "ISC",
+  ,"visualizer","dsa"],
+  "author": "Anurag Shukla",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jhabarsingh/DSALGO-Visualizer/issues"
+    "url": "https://github.com/AnuragShukla19/AlgoViz/issues"
   },
-  "homepage": "https://github.com/jhabarsingh/DSALGO-Visualizer#readme"
+  "homepage": "https://github.com/AnuragShukla19/AlgoViz#readme"
 }

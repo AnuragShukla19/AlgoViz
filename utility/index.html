@@ -1,136 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>DSAlgoVisualizer</title>
-	<style>
-		html, * {
-			margin: 0px;
-			padding: 0px;
-			box-sizing: border-box;
-		}
-
-		#main {
-			min-height: 100vh;
-			background: wheat;
-			overflow: hidden;
-		}
-
-		.main__heading {
-			background: lightgreen;
-			box-shadow: -5px -5px 20px 	rgba(0, 0, 0, .3);
-			border-radius: 0 0 20px 0px;
-			font-family: ubuntu;
-			font-weight: bolder;
-			font-size: 30px;
-			margin: auto;
-			display: flex;
-			justify-content: center;
-			display: flex;
-			flex-wrap: wrap;
-			text-align: center;
-			padding: 20px 0px ;
-		}	
-
-		.heading__text {
-			font-family: serif;
-			color: darkgray;
-			font-weight: bolder;
-			font-size: 34px;
-		}
-
-		.section {
-			overflow-y: scroll;
-			display: flex;
-			margin: auto;
-			text-align: center;
-		}
-
-
-		.info__box:hover {
-			transform: translateY(-10px);
-			transition:  100ms linear;
-		}
-
-		.popup__heading {
-			font-family: ubuntu;
-			font-weight: bold;
-			font-size: 23px;
-		}
-
-		.popup__sub__heading {
-			text-align: left;
-			font-weight: bold;
-			text-transform: capitalize;
-		}
-
-		.popup__sub__heading > b {
-			color: gray;
-			font-weight: bolder;
-			font-size: 23px;
-		}
-
-		.popup__sub__heading__details {
-
-		}
-
-		.card-body {
-			display: flex;
-			justify-content: flex-start;
-			box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
-			background: lightgreen;
-			flex-wrap: wrap;
-		}
-
-		.card {
-			text-align: center;
-			display: flex;
-			justify-content: center;
-			transform: scale(.9);
-			box-shadow: 5px -5px 5px rgba(0, 0, 0, .3);
-			transition: 100ms linear;
-		}
-
-		.card:hover {
-			transform: scale(.9) translateY(-5px);
-			transition: 100ms linear;
-		}
-
-		.card-img-top-parent {
-			overflow: hidden;
-			transition: 200ms linear;
-			height: 300px;
-			position: relative;
-		}
-
-
-		.card-img-top:hover {
-			transition: 200ms linear;
-			transform: scale(1.1);
-		}
-
-		.card__heading {
-			padding: 10px;
-			background: lightgreen;
-			font-weight: bolder;
-			text-transform: uppercase;
-			font-family: ubuntu;
-			color: gray;
-			font-size: 1.2rem;
-		}
-
-	</style>
+	<title>AlgoViz</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
 </head>
 <body>
      <div id='main'>
      	<div class="main__heading">
-			<b class='heading__text'>DSALGO</b>  &nbsp;&nbsp; <span>let's make ds algo fun</span>     		
+			<b class='heading__text'>AlgoViz</b>
+			<span class="tagline">See algorithms in motion.</span>
+			<div class="search-wrap">
+				<input type="text" class="search-input" placeholder="Search topics..." aria-label="Search topics">
+			</div>
+			<button type="button" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
      	</div>
      	<div class="section row"></div>
+		<p class="no-results">No topics match your search. Try something else.</p>
      	<div class="body__bin"></div>
+		<button type="button" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
      </div>
 
      <script>
@@ -492,8 +382,8 @@
 
 				let html = `
 
-					<div class="popup__heading">DSALGO</div>
-					<div class="popup__sub__heading">what is <b>DSALGO</b> ?</div>
+					<div class="popup__heading">AlgoViz</div>
+					<div class="popup__sub__heading">what is <b>AlgoViz</b> ?</div>
 					<blockquote class="popup__sub__heading__details"> </blockquote>
 				
 				`
@@ -522,10 +412,11 @@
 
 	     	}
 	     	else {
-	     		debugger;
+	     		// already shown
 	     	}
      	}
 
      </script>
+	<script src="../js/main.js"></script>
 </body>
 </html>
