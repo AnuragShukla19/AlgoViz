@@ -1,6 +1,7 @@
 /**
  * AlgoViz - Main frontend interactivity
  * Theme toggle, search filter, back-to-top, animations
+ * AlgoViz
  */
 (function () {
 	'use strict';
